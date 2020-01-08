@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="load_data.js"></script>
+  <script src="captions.js"></script>
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+	setUp(true);
+</script>
+
+<div id="switch" onclick="toggle_course(this)">Switch to 2x data</div>
+<div id="container">
+	<div id="sidebar">
+		<div class="category">Engagement</div>
+		<div class="sub_container" id="overall_sub">
+			<div id="overall_per" class="subcategory" onclick="tog(this)">Percentages</div>
+			<div id="overall_raw" class="subcategory" onclick="tog(this)">Raw Numbers</div>
+			<div id="overall_by_grade" class="subcategory" onclick="tog(this)">By Overall Grade</div>
+			<div id="overall_certified" class="subcategory" onclick="tog(this)">Certified</div>
+		</div>
+
+		<div class="category">Demographics</div>
+		<div class="sub_container" id="overall_sub">
+			<div id="demo_age_agg" class="subcategory" onclick="tog(this)">Age (Aggregate)</div>
+			<div id="demo_age_sem" class="subcategory" onclick="tog(this)">Age (By Semester)</div>
+			<div id="demo_gender" class="subcategory" onclick="tog(this)">Gender</div>
+			<div id="demo_education" class="subcategory" onclick="tog(this)">Education Level</div>
+		</div>
+
+		<div class="category">Repeat learners</div>
+		<div class="sub_container" id="overall_sub">
+			<div class="subcategory" onclick="tog(this)">Engagement</div>
+			<div class="subcategory" onclick="tog(this)">Grades</div>
+		</div>
+
+		<div class="category">Self-paced vs. instructor</div>
+		<div class="sub_container" id="overall_sub">
+			<div id="pace_engagement" class="subcategory" onclick="tog(this)">Engagement</div>
+		</div>
+
+		<div class="category">Intro vs. Advanced</div>
+		<div class="sub_container" id="overall_sub">
+			<div id="level_age" class="subcategory" onclick="tog(this)">Age</div>
+		</div>
+
+		<div class="category">Monetary</div>
+		<div class="sub_container" id="overall_sub">
+			<div id="monetary_promo" class="subcategory" onclick="tog(this)">Promo Emails</div>
+		</div>
+	</div>
+
+	<div id="chart-container">
+		<canvas id="myChart"></canvas>
+		<div id="caption">Caption goes here</div>
+	</div>
+
+</div>
+
+</body>

@@ -1,0 +1,63 @@
+body {
+	font-family: Verdana;
+	color:grey;
+}
+
+#chart-container {
+	height:1300px;
+	width:1300px;
+	margin-right:40px;
+}
+
+#container {
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top:30px;
+}
+
+.sub_container {
+	margin-left:30px;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+.category {
+	font-size:24px;
+	margin:30px 40px 0px 10px;
+	font-weight: bold;
+	width: 300px;
+}
+
+.subcategory:hover, #switch:hover {
+	cursor: pointer;
+	color:blue;
+}
+
+.subcategory.active {
+	color:blue;
+}
+
+.subcategory {
+	font-size:18px;
+	color:grey;
+	width:300px;
+}
+
+#switch {
+	font-size:26px;
+	color:grey;
+	margin: 10px;
+	cursor: pointer;
+	border: dashed grey 1px;
+	width: 250px;
+	padding:5px;
+}
+
+#caption {
+	font-size:16px;
+	margin:40px 30px 50px 150px;
+	display:none;
+}
